@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121212">
+    <meta name="description" content="APSAX Group Limited provides mining engineering, shaft development, geological consultancy, feasibility studies and environmental assessment support.">
+    <title>APSAX Group Limited | Mining Engineering & Geological Consultancy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#121212',
+                        darkcard: '#1a1a1a',
+                        bordercolor: '#2a2a2a',
+                        industrialgold: '#D4AF37',
+                        goldhover: '#e6c555',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Metallic & Gold Gradient Styling mirroring the official logo */
+        .logo-apsa {
+            background: linear-gradient(135deg, #f1f5f9 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .logo-x {
+            background: linear-gradient(135deg, #fbbf24 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .logo-sub {
+            letter-spacing: 0.28em;
+            color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-gray-100 antialiased selection:bg-amber-600 selection:text-white">
+
+    <!-- Sticky Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-charcoal/90 backdrop-blur-md border-b border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Official APSAX logo -->
+            <a href="#top" aria-label="APSAX Group Limited home" class="flex items-center group">
+                <img src="assets/apsax-logo.png" alt="APSAX Group Limited" class="h-14 sm:h-16 w-auto max-w-[190px] object-contain" />
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-amber-400 transition-colors">About Us</a>
+                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#expertise" class="hover:text-amber-400 transition-colors">Core Specializations</a>
+                <a href="#partners" class="hover:text-amber-400 transition-colors">Partners</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium text-sm transition-all shadow-lg shadow-amber-600/20 flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darkcard border-b border-bordercolor px-6 py-5 space-y-4">
+            <a href="#about" class="block text-gray-300 hover:text-amber-400 font-medium mobile-link">About Us</a>
+            <a href="#services" class="block text-gray-300 hover:text-amber-400 font-medium mobile-link">Services</a>
+            <a href="#expertise" class="block text-gray-300 hover:text-amber-400 font-medium mobile-link">Core Specializations</a>
+            <a href="#partners" class="block text-gray-300 hover:text-amber-400 font-medium mobile-link">Partners</a>
+            <a href="#contact" class="block text-gray-300 hover:text-amber-400 font-medium mobile-link">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="block text-center w-full py-2.5 rounded-lg bg-amber-600 text-white font-medium text-sm mobile-link">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="relative min-h-[88vh] flex items-center justify-center pt-24 bg-cover bg-center" style="background-image: linear-gradient(90deg, rgba(12,12,12,.93) 0%, rgba(12,12,12,.78) 48%, rgba(12,12,12,.58) 100%), url('https://upload.wikimedia.org/wikipedia/commons/d/da/Workers_in_the_underground.jpg');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-500/20 rounded-full">
+                Mining Engineering • Geological Consultancy • Project Support
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight">
+                Practical Mining Expertise. <span class="logo-x">Sustainable Progress.</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Supporting mining projects with engineering insight, shaft development, exploration support, feasibility studies, environmental assessment and practical technical reporting.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="px-8 py-4 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold transition-all shadow-xl shadow-amber-600/20 flex items-center justify-center space-x-2">
+                    <span>Explore Services</span>
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+                <a href="#contact" class="px-8 py-4 rounded-lg bg-darkcard hover:bg-neutral-800 text-white border border-bordercolor font-semibold transition-all flex items-center justify-center space-x-2">
+                    <span>Request Consultation</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-charcoal border-t border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">Who We Are</span>
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Uncompromising Technical Rigor & Industry Leadership
+                    </h2>
+                    <p class="mt-6 text-gray-300 leading-relaxed font-light text-base sm:text-lg">
+                        APSAX Group Limited is a premier mining engineering and geological consultancy firm dedicated to optimizing mineral asset value. From complex underground shaft development and comprehensive geophysical surveys to rigorous technical reporting, our multidisciplinary team delivers bankable solutions that meet international standards.
+                    </p>
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="p-5 rounded-xl bg-darkcard border border-bordercolor">
+                            <span class="block text-3xl font-bold text-amber-400">360°</span>
+                            <span class="text-sm text-gray-400 mt-1 block">Mining Project Support</span>
+                        </div>
+                        <div class="p-5 rounded-xl bg-darkcard border border-bordercolor">
+                            <span class="block text-3xl font-bold text-amber-400">End-to-End</span>
+                            <span class="text-sm text-gray-400 mt-1 block">Subsurface Consultancy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video sm:aspect-square rounded-2xl overflow-hidden border border-bordercolor shadow-2xl bg-darkcard relative">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Mining Operation" class="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tanzanian mining landscape feature -->
+    <section class="py-14 bg-charcoal border-t border-bordercolor" aria-label="Tanzanian mining landscape">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div class="overflow-hidden rounded-2xl border border-bordercolor shadow-2xl">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Buzwagi_gold_mine.jpg" alt="Landscape near Buzwagi gold mine in Kahama, Tanzania" loading="lazy" class="w-full h-72 sm:h-96 object-cover" />
+            </div>
+            <div>
+                <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">Grounded in African Mining</span>
+                <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-white tracking-tight">Local context. Professional standards.</h2>
+                <p class="mt-4 text-gray-400 leading-relaxed">Mining projects succeed when technical decisions reflect the geology, operating conditions, communities and environmental setting on the ground. APSAX supports practical, context-aware planning across the mining project lifecycle.</p>
+                <p class="mt-4 text-xs text-gray-500">Illustrative photograph of the Buzwagi mine area, Kahama, Tanzania; not an APSAX-owned site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Specializations Highlights -->
+    <section id="expertise" class="py-20 bg-darkcard/50 border-t border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">Flagship Expertise</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-bold text-white tracking-tight">Core Technical Pillars</h2>
+                <p class="mt-4 text-gray-400">Our primary areas of specialized engineering excellence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-darkcard border border-amber-500/30 hover:border-amber-500 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 text-xl">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Shaft Development</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Specialized underground access engineering, sinking supervision, and structural stability reinforcement.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-amber-500/30 hover:border-amber-500 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 text-xl">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Geophysical Surveys</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Advanced subsurface geophysical data acquisition, processing, and geological target interpretation.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-amber-500/30 hover:border-amber-500 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 text-xl">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Technical Reporting</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Bankable Feasibility Studies (FS), Pre-Feasibility (PFS), PEA, and due diligence compliance reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Services Grid (10+ Services) -->
+    <section id="services" class="py-24 bg-charcoal border-t border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">Full Spectrum Services</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-bold text-white tracking-tight">Our Complete Portfolio</h2>
+                <p class="mt-4 text-gray-400">Professional mining and geological solutions tailored for maximum project success.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">01</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Shaft Development & Underground Infrastructure</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Engineering design, sinking supervision, and stability for underground access.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">02</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Geophysical Surveys & Interpretation</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Advanced ground and airborne geophysical surveys for mineral discovery.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">03</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Technical Reporting (JORC, SAMREC, PEA, PFS/FS)</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Independent bankable technical studies and resource reporting.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">04</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Exploration & Geological Services</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Structural mapping, geochemical sampling, and target generation.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">05</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Resource & Reserve Estimation</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Geostatistical modeling and mineral inventory estimation.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">06</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Mine Planning, Design & Drill & Blast</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Open-pit and underground mine layout, scheduling, and precision blasting.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">07</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Geotechnical & Hydrogeological Services</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Rock mechanics, slope stability, and groundwater management.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">08</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Surveying & Aerial Mapping (UAV, LiDAR)</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">High-precision topographic surveys and aerial drone scanning.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group">
+                    <span class="text-amber-400 font-bold text-lg">09</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Environmental & Mine Closure (ESIA)</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Environmental impact assessments and sustainable closure planning.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-darkcard border border-bordercolor hover:border-amber-500/50 transition-all group md:col-span-2 lg:col-span-3">
+                    <span class="text-amber-400 font-bold text-lg">10</span>
+                    <h3 class="mt-4 text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">Technical Advisory, Due Diligence, Software Training & License Development</h3>
+                    <p class="mt-3 text-gray-400 text-sm leading-relaxed">Independent asset audits, investor due diligence, capacity building software training, and PMLs/PLs license development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section: avoids listing unverified partner names -->
+    <section id="partners" class="py-20 bg-darkcard/50 border-t border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">How We Work</span>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-bold text-white tracking-tight">Built Around Your Project Needs</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-gray-400 leading-relaxed">We collaborate with clients, technical specialists, service providers and project stakeholders to help move mining projects from early assessment toward responsible execution.</p>
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5 text-left">
+                <div class="p-6 rounded-xl bg-darkcard border border-bordercolor"><i class="fa-solid fa-compass-drafting text-amber-400 text-xl"></i><h3 class="mt-4 text-lg font-semibold text-white">Technical coordination</h3><p class="mt-2 text-sm text-gray-400 leading-relaxed">Connecting project requirements with suitable technical expertise and practical work plans.</p></div>
+                <div class="p-6 rounded-xl bg-darkcard border border-bordercolor"><i class="fa-solid fa-helmet-safety text-amber-400 text-xl"></i><h3 class="mt-4 text-lg font-semibold text-white">Responsible operations</h3><p class="mt-2 text-sm text-gray-400 leading-relaxed">Keeping safety, environmental responsibility and operational realities central to project decisions.</p></div>
+                <div class="p-6 rounded-xl bg-darkcard border border-bordercolor"><i class="fa-solid fa-chart-line text-amber-400 text-xl"></i><h3 class="mt-4 text-lg font-semibold text-white">Decision-ready insight</h3><p class="mt-2 text-sm text-gray-400 leading-relaxed">Clear technical information to support planning, evaluation and informed investment discussions.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact & Inquiry Section -->
+    <section id="contact" class="py-24 bg-charcoal border-t border-bordercolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Column with Active Contact Links -->
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-amber-400 uppercase">Get in Touch</span>
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-bold text-white tracking-tight">Initiate Your Project Discussion</h2>
+                    <p class="mt-4 text-gray-400 leading-relaxed">
+                        Ready to advance your mining venture? Reach out instantly via WhatsApp, direct call, official email, or our Instagram account.
+                    </p>
+
+                    <div class="mt-8 space-y-6">
+                        <!-- WhatsApp Direct Link -->
+                        <a href="https://wa.me/255683201365" target="_blank" class="flex items-start space-x-4 p-4 rounded-xl bg-darkcard border border-bordercolor hover:border-emerald-500 transition-all group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-medium text-gray-400 uppercase tracking-wider">WhatsApp Instant Chat</span>
+                                <span class="text-white font-bold text-lg group-hover:text-emerald-400 transition-colors">+255 683 201 365</span>
+                            </div>
+                        </a>
+
+                        <!-- Direct Call Link -->
+                        <a href="tel:+255683201365" class="flex items-start space-x-4 p-4 rounded-xl bg-darkcard border border-bordercolor hover:border-amber-500 transition-all group">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-medium text-gray-400 uppercase tracking-wider">Direct Phone Call</span>
+                                <span class="text-white font-bold text-lg group-hover:text-amber-400 transition-colors">+255 683 201 365</span>
+                            </div>
+                        </a>
+
+                        <!-- Official Email Link -->
+                        <a href="mailto:salminmwenesi@gmail.com" class="flex items-start space-x-4 p-4 rounded-xl bg-darkcard border border-bordercolor hover:border-amber-500 transition-all group">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-medium text-gray-400 uppercase tracking-wider">Official Email Address</span>
+                                <span class="text-white font-bold text-lg group-hover:text-amber-400 transition-colors">salminmwenesi@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Instagram Profile Link -->
+                        <a href="https://www.instagram.com/apsax_group_limited?rpxt=cHc4bm0wc2tuNXU3&utm_source=qr" target="_blank" class="flex items-start space-x-4 p-4 rounded-xl bg-darkcard border border-bordercolor hover:border-pink-500 transition-all group">
+                            <div class="w-10 h-10 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 shrink-0 text-xl">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-medium text-gray-400 uppercase tracking-wider">Instagram Official Handle</span>
+                                <span class="text-white font-bold text-lg group-hover:text-pink-400 transition-colors">@apsax_group_limited</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form Column -->
+                <div class="bg-darkcard p-8 rounded-2xl border border-bordercolor shadow-xl relative">
+                    <h3 class="text-xl font-bold text-white mb-2">Secure Inquiry Portal</h3>
+                    <p class="text-xs text-gray-400 mb-6">Inquiries route directly to <span class="text-amber-400">salminmwenesi@gmail.com</span>.</p>
+                    
+                    <form id="inquiry-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Full Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg bg-charcoal border border-bordercolor text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="e.g. Dr. Arthur Pendelton">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg bg-charcoal border border-bordercolor text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="e.g. arthur@miningcorp.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Company / Organization</label>
+                            <input type="text" id="company" class="w-full px-4 py-3 rounded-lg bg-charcoal border border-bordercolor text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="e.g. Apex Minerals Ltd">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Project Details & Services Needed</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-charcoal border border-bordercolor text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="Describe your requirements (e.g. Shaft development, geophysical surveys, technical reports)..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold transition-all shadow-lg shadow-amber-600/20 flex items-center justify-center space-x-2">
+                            <span>Send Direct Inquiry</span>
+                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Confirmation Modal -->
+                    <div id="success-modal" class="hidden absolute inset-0 bg-darkcard/95 backdrop-blur-md rounded-2xl p-8 flex flex-col items-center justify-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mb-4">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white">Inquiry Dispatched Successfully</h4>
+                        <p class="text-gray-300 mt-2 text-sm max-w-sm">
+                            Thank you. Your message has been successfully routed to <span class="text-amber-400 font-semibold">salminmwenesi@gmail.com</span>. We will contact you promptly.
+                        </p>
+                        <button onclick="resetForm()" class="mt-6 px-6 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium text-sm transition-all">
+                            Send Another Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal border-t border-bordercolor py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-neutral-800 border border-bordercolor flex items-center justify-center text-amber-400 font-bold text-sm">
+                    AG
+                </div>
+                <span class="text-white font-semibold">APSAX Group Limited</span>
+            </div>
+            <p class="text-sm text-gray-500 text-center">
+                &copy; 2026 APSAX Group Limited. All rights reserved. Premier Mining Engineering Consultancy.
+            </p>
+            <div class="flex space-x-5 text-gray-400">
+                <a href="https://wa.me/255683201365" target="_blank" class="hover:text-emerald-400 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+                <a href="mailto:salminmwenesi@gmail.com" class="hover:text-amber-400 transition-colors">
+                    <i class="fa-solid fa-envelope text-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/apsax_group_limited?rpxt=cHc4bm0wc2tuNXU3&utm_source=qr" target="_blank" class="hover:text-pink-400 transition-colors">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 pt-5 border-t border-bordercolor text-xs text-gray-500 leading-relaxed">
+            Image credits: “Workers in the underground” by Deo photographer and “Buzwagi gold mine” by Mamatimo, via Wikimedia Commons, licensed CC BY-SA 4.0. Images are illustrative and do not imply APSAX ownership or affiliation with the depicted mines. <a class="underline hover:text-amber-400" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">License details</a>.
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // The form uses the visitor's email application; no server-side delivery is configured.
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const company = document.getElementById('company').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const subject = `APSAX website inquiry — ${name}${company ? ' | ' + company : ''}`;
+            const body = `Name: ${name}\nCompany: ${company || 'Not provided'}\nReply email: ${email}\n\nProject details:\n${message}`;
+            const mailtoUrl = `mailto:salminmwenesi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoUrl;
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function resetForm() {
+            document.getElementById('inquiry-form').reset();
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
